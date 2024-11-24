@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./style.css" rel="stylesheet" />
+    <link href="./responsive.css" rel="stylesheet" />
     <title>PARVEZ'S PORTFOLIO</title>
   </head>
   <body>
@@ -11,24 +12,24 @@
     <div class="main-container">
       <!-- Nav Bar -->
       <nav class="nav-bar">
-        <div class="logo"><h2>PARVEZ</h2></div>
+        <div class="logo"><a href="./">PARVEZ</a></div>
         <ul class="menu-items">
-          <a href="">
+          <a href="./">
             <li>HOME</li>
           </a>
           <a href="#about">
-            <li>ABOUT</li>
+            <li>ABOUT ME</li>
           </a>
-          <a href="">
+          <a href="#education">
             <li>EDUCATION</li>
           </a>
-          <a href="">
+          <a href="#skills">
             <li>SKILLS</li>
           </a>
-          <a href="">
+          <a href="#experience">
             <li>EXPERIENCE</li>
           </a>
-          <a href="">
+          <a href="#portfolio">
             <li>PORTFOLIO</li>
           </a>
         </ul>
@@ -38,9 +39,7 @@
           <h2>HI, I AM</h2>
           <h2>MOHAMMED PARVEZ</h2>
           <p>Full Stack Web Developer</p>
-          <a class="download-btn" href="./assets/hero-img.jpg" download="resume"
-            >DOWNLOAD RESUME</a
-          >
+          <a class="download-btn" href="#" download="resume">DOWNLOAD RESUME</a>
         </div>
       </div>
 
@@ -68,7 +67,7 @@
             <div class="about-details">
               <div>
                 <p>Phone</p>
-                <p>90363 65889</p>
+                <p>90363-65889</p>
               </div>
               <div>
                 <p>Email</p>
@@ -83,7 +82,7 @@
       </div>
 
       <!-- Education Section -->
-      <div class="education-section">
+      <div id="education" class="education-section">
         <h2>EDUCATION</h2>
         <hr />
         <div class="education-row">
@@ -106,7 +105,7 @@
         </div>
       </div>
       <!-- Skill Section -->
-      <div class="skills-section">
+      <div id="skills" class="skills-section">
         <h2>SKILLS</h2>
         <hr />
         <div class="skills">
@@ -154,7 +153,7 @@
 
           <div class="skill-2">
             <div>
-              <p>TAILWIND CSS CSS</p>
+              <p>TAILWIND CSS</p>
               <div class="progress-row">
                 <div class="progress">
                   <div class="progress-bar1" style="width: 85%"></div>
@@ -197,7 +196,7 @@
         <hr />
       </div>
       <!-- Experience Section -->
-      <div class="experience-section">
+      <div id="experience" class="experience-section">
         <h2>EXPERIENCE</h2>
         <hr />
         <div>
@@ -246,7 +245,6 @@
           <div class="exp-row-3">
             <div class="left-line">
               <div class="dot"></div>
-              <div class="line-3"></div>
             </div>
             <div class="exp-3">
               <p class="exp-year">2017 - 2020</p>
@@ -261,12 +259,15 @@
       </div>
 
       <!-- Portfolio Section -->
-      <div class="portfolio-section">
+      <div id="portfolio" class="portfolio-section">
+        <h2>PORTFOLIO</h2>
+        <hr />
+
         <!-- First Row -->
         <div class="port-row">
           <!-- Card 1 -->
           <div class="card">
-            <img src="./assets/poject1.PNG" alt="" />
+            <img src="./assets/poject1.png" alt="" />
             <h4>LANDING PAGE</h4>
             <a href="https://mdparvezb.github.io/PRODIGY_WD_01" target="_blank"
               >Live Demo</a
@@ -319,6 +320,85 @@
           </div>
         </div>
       </div>
+      <hr />
+
+      <!-- Contact Me Section -->
+      <div id="contact-me" class="contact-section">
+        <h2>CONTACT ME</h2>
+        <hr />
+        <div class="contact-row">
+          <!-- Left Section -->
+          <div class="contact-left">
+            <form class="contact-form">
+              <div>
+                <input type="text" placeholder="Name*" />
+                <input type="email" placeholder="Email*" />
+              </div>
+              <input type="text" placeholder="Subject" />
+              <textarea placeholder="Message"></textarea>
+            </form>
+            <button class="form-submit">Submit</button>
+          </div>
+
+          <!-- Right Section -->
+          <div class="contact-right">
+            <h3 class="contact-name">Mohammed Parvez</h3>
+            <p class="contact-tagline">Full Stack Web Developer</p>
+            <p class="contact-phone">Phone</p>
+            <p class="contact-number">90363-65889</p>
+            <p class="contact-mail">Email</p>
+            <p class="contact-mail-id">mdparvezbyahatti@gmail.com</p>
+            <p class="contact-git">Git Hub Repo</p>
+            <p class="contact-git-link">www.github.com/mdparvezb</p>
+            <div class="social-links">
+              <a href="https://github.com/mdparvezb" target="_blank"
+                ><img src="./assets/github.png"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/mohammedparvez-b-989791228"
+                target="_blank"
+                ><img src="./assets/linkedin.png"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>&copy Copyrights 2024. Design And Developed By Parvez</p>
+      </footer>
+
+      <!-- Mobile Menu -->
+      <div class="hamberger-img">
+        <img class="hamberger-icon" src="./assets/menu.png" />
+      </div>
+      <nav class="mobile-menu">
+        <img class="close-img" src="./assets/close.png" />
+        <ul class="mobile-menu-items">
+          <a href="./">
+            <li>HOME</li>
+          </a>
+          <a href="#about">
+            <li>ABOUT ME</li>
+          </a>
+          <a href="#education">
+            <li>EDUCATION</li>
+          </a>
+          <a href="#skills">
+            <li>SKILLS</li>
+          </a>
+          <a href="#experience">
+            <li>EXPERIENCE</li>
+          </a>
+          <a href="#portfolio">
+            <li>PORTFOLIO</li>
+          </a>
+          <a href="#contact-me">
+            <li>CONTACT ME</li>
+          </a>
+        </ul>
+      </nav>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>

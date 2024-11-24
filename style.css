@@ -13,6 +13,7 @@ body {
   width: 100%;
   height: auto;
   overflow-x: hidden;
+  position: relative;
 }
 
 .main-container {
@@ -34,10 +35,12 @@ body {
   align-items: center;
 }
 
-.nav-bar .logo h2 {
+.nav-bar .logo a {
   color: #d92cf9;
   font-size: 40px;
+  font-weight: bold;
   letter-spacing: 5px;
+  text-decoration: none;
 }
 
 .menu-items {
@@ -54,14 +57,23 @@ body {
 .menu-items a {
   text-decoration: none;
   font-weight: 500;
+  color: navy;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.menu-items a:hover {
+  color: orange;
+  transition: all 0.1s linear;
 }
 
 .hero-section {
-  width: 100;
+  width: 100%;
   height: 100vh;
   background-image: url("./assets/hero-img.jpg");
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .hero-section-content {
@@ -331,7 +343,6 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
 }
 
 .experience-section h2 {
@@ -425,7 +436,7 @@ hr {
   padding: 0 20px;
 }
 
-/* Projects */
+/* Portfolio Section */
 .portfolio-section {
   width: 100%;
   padding: 50px;
@@ -434,6 +445,11 @@ hr {
   justify-content: center;
   align-items: center;
   gap: 40px;
+}
+
+.portfolio-section h2 {
+  padding: 20px 0;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .port-row {
@@ -459,6 +475,7 @@ hr {
 .card h4 {
   color: rgba(0, 0, 0, 0.7);
   pad: 5px 0;
+  text-align: center;
 }
 
 .card img {
@@ -483,9 +500,228 @@ hr {
   font-weight: bold;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
   margin: 10px 0;
+  text-align: center;
 }
 
 .card a:hover {
   background-color: navy;
   transition: all 0.2s linear;
+}
+
+/* Contact Me Section Styling */
+
+.contact-section {
+  width: 100%;
+  background-color: #f9fbfd;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-section h2 {
+  padding: 30px 0;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.contact-row {
+  width: 100%;
+  display: flex;
+  padding: 40px;
+}
+
+.contact-left,
+.contact-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 100px;
+}
+
+.contact-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.contact-form input:focus-visible {
+  border: none;
+  outline: none;
+}
+
+.contact-form textarea:focus-visible {
+  border: none;
+  outline: none;
+}
+
+.contact-form input {
+  width: 100%;
+  padding: 18px;
+  border: none;
+}
+.contact-form div {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+}
+
+.contact-form textarea {
+  height: 150px;
+  border: none;
+  padding: 18px;
+  margin-bottom: 20px;
+  resize: none;
+}
+/* Button */
+.form-submit {
+  width: 100%;
+  padding: 15px;
+  background-color: blue;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 4px;
+  letter-spacing: 2px;
+  border: none;
+  outline: none;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-submit:hover {
+  background-color: navy;
+  cursor: pointer;
+}
+/* Right */
+.contact-right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-name {
+  padding: 10px 0 0;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.8);
+  letter-spacing: 3px;
+}
+
+.contact-tagline {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.6);
+  letter-spacing: 3px;
+}
+
+.contact-phone,
+.contact-mail,
+.contact-git {
+  padding: 20px 0 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7);
+  letter-spacing: 3px;
+}
+
+.contact-number,
+.contact-mail-id,
+.contact-git-link {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.6);
+  letter-spacing: 3px;
+}
+
+.social-links {
+  display: flex;
+  padding-top: 20px;
+  width: 100%;
+  gap: 30px;
+}
+
+.social-links img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Footer Styling */
+.footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  color: rgba(0, 0, 0, 0.7);
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+
+/* Hamberger Menu */
+
+.mobile-menu {
+  width: 70%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 20px 0;
+  background-color: #fff;
+  z-index: 1;
+  display: none;
+}
+
+.mobile-menu-items {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px 0;
+}
+
+.mobile-menu-items li {
+  list-style-type: none;
+  width: 100%;
+  padding: 20px 0;
+  color: darkorange;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+.mobile-menu-items li:hover {
+  background-color: orange;
+  color: #fff;
+}
+
+.mobile-menu-items a {
+  width: 100%;
+  text-decoration: none;
+}
+
+.close-img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.hamberger-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  display: none;
+}
+
+.hamberger-img img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
 }
