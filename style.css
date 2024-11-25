@@ -16,6 +16,11 @@ body {
   position: relative;
 }
 
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .main-container {
   width: 100%;
   overflow-x: hidden;
