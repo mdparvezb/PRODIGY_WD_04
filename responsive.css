@@ -14,6 +14,7 @@
 
   .nav-bar {
     position: static;
+    margin-bottom: 0;
   }
 
   .menu-items {
@@ -159,6 +160,7 @@
   .nav-bar {
     width: 100%;
     position: static;
+    margin-bottom: 0;
   }
 
   .menu-items {
